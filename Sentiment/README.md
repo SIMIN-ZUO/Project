@@ -1,24 +1,24 @@
-#This README contains briefly implementation details for Assignment3
+# This README contains briefly implementation details for Assignment3
 
 
 ************************************************************************************
-##1.) Define functions
+## 1.) Define functions
 
-###Read data:
+### Read data:
 - read_file(filename) : reading data from file and storing as a pandas dataframe
 
-###Evaluations: 
+### Evaluations: 
 - supervised_learning_evaluate(pred, true_label) : evaluating prediction performance for supervised learning model regarding classification_report and accuracy_score
 - unsupervised_learning_evaluate(pred, true_label) : evaluating prediction performance for supervised learning model regarding purity of clusters
 
-###Preprocess data:
+### Preprocess data:
 - pred_transfer(pred) : 
 - tfidf_list_to_df(data, feature_names) :
 - fs_KBest(X_train, y, X_test, score_func=fs.chi2, k=20) :
 - fs_Fpr(X_train, y, X_test, score_func=fs.chi2, alpha=0.01) :
 - auto_fs(X_train, y, X_test, y_test, classifier) :
 
-###Machine learning training and predicting: all return predicted sentiment
+### Machine learning training and predicting: all return predicted sentiment
 supervised learning and semi-supervised learning:
 - zero_rule_algorithm_classification(train, test)
 - logistic(train_X, train_y, test_X)
@@ -36,7 +36,7 @@ unsupervised learning:
 - mean_shift(train_x, test_x)
 
 ************************************************************************************
-##2.) Predicting on raw data
+## 2.) Predicting on raw data
 
 - reading raw data
 - processing raw data
@@ -46,7 +46,7 @@ unsupervised learning:
 
 
 ************************************************************************************
-##3.) Predicting on tfidf data
+## 3.) Predicting on tfidf data
 
 - reading tfidf data
 - processing tfidf data
@@ -58,7 +58,7 @@ unsupervised learning:
 
 
 ************************************************************************************
-##4.) Predicting on embedding data
+## 4.) Predicting on embedding data
 
 - reading embedding data
 - processing embedding data
